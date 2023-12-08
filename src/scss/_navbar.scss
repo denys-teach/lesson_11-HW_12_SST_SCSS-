@@ -1,0 +1,37 @@
+/*navbar*/
+
+.navbar {
+  margin-bottom: 162px;
+
+  @media (max-width: 991.8px) {
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    display: flex;
+
+    column-gap: 43px;
+
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  &_link {
+    display: block;
+
+    padding: $gap-sm 0;
+
+    letter-spacing: $letter-spacing;
+
+    color: $color-black;
+
+    line-height: $line-height-lg;
+
+    &:focus,
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}
